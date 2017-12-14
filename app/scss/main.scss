@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "comfortaa";
+    src: url("../fonts/comfortaa/comfortaa-regular.ttf");
+}
+@font-face {
+    font-family: "comfortaa";
+    src: url("../fonts/comfortaa/comfortaa-bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "comfortaa";
+    src: url("../fonts/comfortaa/comfortaa-light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "kurale";
+    src: url("../fonts/kurale/kurale-regular.ttf");
+}
+
+@font-face {
+    font-family: "pt_sans";
+    src: url("../fonts/pt_sans/pt_sans.ttf");
+}
+
+
+
+$green: #579e10;
+$gold: #d1a815;
+
+
+
+body {
+	margin: 0px 20px;
+}
+
+.mainNavigation {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 42px;
+	.companyDescription-logo {
+		margin-top: 11px;
+	}
+	.companyDescription-burger {
+	  display: inline-block;
+	  margin-top: 20px;
+	  cursor: pointer;
+		.bar1,
+		.bar2,
+		.bar3 {
+		    width: 30px;
+		    height: 4px;
+		    background-color: $green;
+		    margin: 6px 0;
+		}    
+	}
+}
+.mainNavigation::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url("../img/bgFlowers.png");
+	width: 100px;
+	height: 180px;
+	z-index: -1;
+}
+
+.companyDescription {
+	h2 {
+		text-align: center;
+		font-family: "kurale";
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+	p {
+		margin: 0px;
+		margin-bottom: 56px;
+		padding-top: 20px;
+		text-align: center;
+		color: $gold;
+		font-family: "Myriad Pro", "pt_sans";
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.companyDescription-SunFoodsBrand {
+		border-top: 6px solid $gold;
+	}
+}
+
+
+
