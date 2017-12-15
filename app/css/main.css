@@ -21,7 +21,12 @@
   src: url("../fonts/pt_sans/pt_sans.ttf"); }
 
 body {
-  margin: 0px 20px; }
+  font-family: "comfortaa", cursive; }
+
+.emphasizedParagraph {
+  color: #d1a815;
+  font-size: 15px;
+  line-height: 30px; }
 
 .mainNavigation {
   display: -webkit-box;
@@ -33,12 +38,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  margin-bottom: 42px; }
+  margin-bottom: 47px;
+  padding: 0px 20px; }
   .mainNavigation .companyDescription-logo {
     margin-top: 11px; }
   .mainNavigation .companyDescription-burger {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 14px;
     cursor: pointer; }
     .mainNavigation .companyDescription-burger .bar1,
     .mainNavigation .companyDescription-burger .bar2,
@@ -56,26 +62,121 @@ body {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../img/bgFlowers.png");
+  background-image: url("../img/bgOrnament.png");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100px;
   height: 180px;
   z-index: -1; }
 
-.companyDescription h2 {
-  text-align: center;
-  font-family: "kurale";
-  font-size: 36px;
-  margin-bottom: 25px; }
+.companyDescription {
+  margin-bottom: 110px;
+  padding: 0px 20px; }
+  .companyDescription h2 {
+    text-align: center;
+    font-family: "kurale";
+    font-size: 36px;
+    margin-bottom: 32px; }
+  .companyDescription img {
+    display: block;
+    margin: 0px auto;
+    max-width: 100%; }
+  .companyDescription p {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: left; }
+  .companyDescription .companyDescription-SunFoodsBrandDesc {
+    padding-top: 13px;
+    border-top: 6px solid #d1a815;
+    text-align: center; }
+  .companyDescription .companyDescription-NSTTechDesc {
+    padding-top: 18px; }
+  .companyDescription .companyDescription-SunFoodPromotion {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000; }
 
-.companyDescription p {
-  margin: 0px;
-  margin-bottom: 56px;
-  padding-top: 20px;
-  text-align: center;
-  color: #d1a815;
-  font-family: "Myriad Pro", "pt_sans";
-  font-size: 16px;
-  line-height: 30px; }
-
-.companyDescription .companyDescription-SunFoodsBrand {
-  border-top: 6px solid #d1a815; }
+.manufactureDescription {
+  position: relative;
+  padding-top: 110px; }
+  .manufactureDescription h2,
+  .manufactureDescription p {
+    padding: 0px 20px; }
+  .manufactureDescription h2 {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+    font-family: "kurale", serif;
+    font-size: 36px;
+    line-height: 40px; }
+  .manufactureDescription h2::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-image: url("../img/bgOrnament.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 290px;
+    z-index: -1; }
+  .manufactureDescription .manufactureDescription-infraredDrying {
+    background-image: url("../img/manufactureDescription/bgForPepper1.png");
+    background-repeat: no-repeat;
+    background-position: 85% 100%;
+    max-width: 555px;
+    height: 550px;
+    margin: 0 auto; }
+    .manufactureDescription .manufactureDescription-infraredDrying .wrapper {
+      position: relative;
+      margin-left: auto;
+      max-width: 277px;
+      min-height: 50px; }
+    .manufactureDescription .manufactureDescription-infraredDrying h3 {
+      position: absolute;
+      margin-top: 29px;
+      left: 17%;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 24px; }
+    @media only screen and (min-width: 390px) {
+      .manufactureDescription .manufactureDescription-infraredDrying h3 {
+        left: 12%; } }
+    @media only screen and (min-width: 500px) {
+      .manufactureDescription .manufactureDescription-infraredDrying h3 {
+        left: 14px; } }
+  .manufactureDescription .manufactureDescription-p {
+    font-size: 14px;
+    line-height: 24px; }
+  .manufactureDescription .manufactureDescription-lowTempDrying {
+    background-image: url("../img/manufactureDescription/bgForMeltedPepper1.png");
+    background-repeat: no-repeat;
+    background-position: 4% 100%;
+    max-width: 555px;
+    height: 485px;
+    margin: 0 auto; }
+    .manufactureDescription .manufactureDescription-lowTempDrying .wrapper {
+      position: relative;
+      margin-right: auto;
+      max-width: 277px;
+      min-height: 50px; }
+    .manufactureDescription .manufactureDescription-lowTempDrying h3 {
+      padding-top: 29px;
+      padding-left: 20px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 24px; }
+  .manufactureDescription .manufactureDescription-premiumProduct p {
+    text-align: center; }
+  .manufactureDescription .manufactureDescription-premiumProduct p::before {
+    content: url("../img/manufactureDescription/icon-premiumGold.png");
+    display: block; }
+  .manufactureDescription .manufactureDescription-bestBefore {
+    color: #579e10;
+    border-top: 6px solid #579e10;
+    border-bottom: 6px solid #579e10; }

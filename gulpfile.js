@@ -29,12 +29,12 @@ gulp.task('sass', function() {
 // 		.pipe(gulp.dest('app/js'))
 // });
 
-// gulp.task('css-libs', ['sass'], function() {
-// 	return gulp.src('app/css/libs.css')
-// 		.pipe(cssnano())
-// 		.pipe(rename({suffix: '.min'}))
-// 		.pipe(gulp.dest('app/css'))
-// })
+gulp.task('css-libs', ['sass'], function() {
+	return gulp.src('app/css/libs.css')
+		.pipe(cssnano())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('app/css'))
+})
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -64,13 +64,13 @@ gulp.task('img', function() {
 	.pipe(gulp.dest('dist/img'))
 });
 	
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', ['browser-sync', 'css-libs'], function() {
 	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('app/**/*.html', browserSync.reload)
 	gulp.watch('app/js/**/*.js', browserSync.reload)
 });
 
-gulp.task('build', ['clean', 'img', 'sass'], function() {
+gulp.task('build', ['clean', 'img', 'css-libs', 'sass'], function() {
 	var buildCss = gulp.src([
 		'app/css/main.css',
 		'app/css/libs.min.css'
