@@ -1,3 +1,5 @@
+
+// ---------- fonts ----------
 @font-face {
     font-family: "comfortaa";
     src: url("../fonts/comfortaa/comfortaa-regular.ttf");
@@ -24,14 +26,14 @@
 }
 
 
-
+// ---------- colors ----------
 $green: #579e10;
 $gold: #d1a815;
 $black: #000000;
 $white: #ffffff;
 
 
-
+// ---------- general tags/classes ----------
 body {
 	font-family: "comfortaa", cursive;	
 }
@@ -164,7 +166,7 @@ p {
 
   // Pepper graphics-----------------------------------
 	.manufactureDescription-infraredDrying {
-		background-image: url("../img/manufactureDescription/bgForPepper1.png");
+		background-image: url("../img/manufactureDescription/bgForPepper.png");
 	  background-repeat: no-repeat;
 	  background-position: 85% 100%;
  
@@ -204,7 +206,7 @@ p {
 	
 	// meltedPepper graphics-----------------------------------
 	.manufactureDescription-lowTempDrying {
-		background-image: url("../img/manufactureDescription/bgForMeltedPepper2.png");
+		background-image: url("../img/manufactureDescription/bgForMeltedPepper.png");
 	  background-repeat: no-repeat;
 	  background-position: 4% 100%;
  
@@ -608,9 +610,10 @@ footer {
 			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
-			h3 {
+		}
+
+		h3 {
 				margin-top: 0px;
-			}
 		}
 
 		.productionSafety-advantages {
@@ -663,12 +666,13 @@ footer {
 		border-image: url("../img/borderTexture.png") 30 30 30 30 repeat;
 	}
 
+	// ---------- main navigation section ----------
+	.mainNavigation {
+		margin-bottom: 7px;
+	}
+
 	// ---------- company description section ----------
 	.companyDescription {
-
-		.container {
-			// position: relative;
-		}
 
 		.companyDescription-imgDotDecor {
 			position: absolute;
@@ -806,4 +810,13 @@ footer {
 
 		}
 	}
+
+
+
+	// ---------- footer section ----------
+	footer {
+		max-width: 1000px;
+		margin: 0 auto;		
+	}
+
 }

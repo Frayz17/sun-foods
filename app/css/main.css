@@ -128,7 +128,7 @@ p {
     .manufactureDescription header {
       height: 180px; } }
   .manufactureDescription .manufactureDescription-infraredDrying {
-    background-image: url("../img/manufactureDescription/bgForPepper1.png");
+    background-image: url("../img/manufactureDescription/bgForPepper.png");
     background-repeat: no-repeat;
     background-position: 85% 100%;
     max-width: 555px;
@@ -155,7 +155,7 @@ p {
       .manufactureDescription .manufactureDescription-infraredDrying h3 {
         left: 14px; } }
   .manufactureDescription .manufactureDescription-lowTempDrying {
-    background-image: url("../img/manufactureDescription/bgForMeltedPepper2.png");
+    background-image: url("../img/manufactureDescription/bgForMeltedPepper.png");
     background-repeat: no-repeat;
     background-position: 4% 100%;
     max-width: 555px;
@@ -447,8 +447,8 @@ footer {
       width: 100%;
       margin-left: auto;
       margin-right: auto; }
-      .productionSafety header h3 {
-        margin-top: 0px; }
+    .productionSafety h3 {
+      margin-top: 0px; }
     .productionSafety .productionSafety-advantages {
       margin-bottom: 30px;
       width: 40%; }
@@ -483,6 +483,8 @@ footer {
     -webkit-border-image: url("../img/borderTexture.png") 30 30 30 30 repeat;
     -o-border-image: url("../img/borderTexture.png") 30 30 30 30 repeat;
     border-image: url("../img/borderTexture.png") 30 30 30 30 repeat; }
+  .mainNavigation {
+    margin-bottom: 7px; }
   .companyDescription .companyDescription-imgDotDecor {
     position: absolute;
     top: 400px;
@@ -582,4 +584,7 @@ footer {
         border: 3px solid #cce2b7;
         color: #437a0d; }
       .contacts .contacts-contactInfo .contacts-contactInfo-email {
-        margin-top: 0px; } }
+        margin-top: 0px; }
+  footer {
+    max-width: 1000px;
+    margin: 0 auto; } }
