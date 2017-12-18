@@ -17,9 +17,6 @@
   font-family: "kurale";
   src: url("../fonts/kurale/kurale-regular.ttf"); }
 
-@font-face {
-  font-family: "pt_sans";
-  src: url("../fonts/pt_sans/pt_sans.ttf"); }
 
 body {
   font-family: "comfortaa", cursive; }
